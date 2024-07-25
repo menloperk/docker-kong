@@ -93,7 +93,7 @@ services:
     volumes:
       - kong_prefix_vol:${KONG_PREFIX:-/var/run/kong}
       - kong_tmp_vol:/tmp
-      - /home/ubuntu/appdata/kong/config:/opt/kong
+      - ./config:/opt/kong
     security_opt:
       - no-new-privileges
 
